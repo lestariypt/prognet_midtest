@@ -1,0 +1,147 @@
+.alert {
+    box-sizing: border-box;
+    opacity: 0.95;
+    width: inherit;
+    right: 0;
+    max-width: 383px;
+    display: none;
+    pointer-events: none;
+    z-index: 1000;
+    /* left: 50%;
+    right: 50%;
+    width: 20% !important; */
+}
+.add,
+.edit {
+    font-size: 0.85em;
+}
+input::placeholder {
+    font-size: 1em;
+}
+input[type="text"] {
+    font-size: 1em;
+}
+
+/* html * {
+    border: 1px solid red;
+
+} */
+.showAlert {
+    pointer-events: auto;
+}
+
+body {
+    overflow-y: hidden;
+}
+.close {
+    top: 0;
+    height: inherit;
+    width: 50px;
+    right: 0;
+    padding: 2px;
+    border: none !important;
+    background-color: Transparent;
+    cursor: pointer;
+}
+.close:hover {
+    cursor: pointer;
+}
+
+.show {
+    animation: show_slide 1s ease forwards;
+}
+
+@keyframes show_slide {
+    0% {
+        transform: translateX(100%);
+    }
+    40% {
+        transform: translateX(-10%);
+    }
+    80% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+.hide {
+    animation: hide_slide 1s ease forwards;
+}
+
+@keyframes hide_slide {
+    0% {
+        transform: translateX(0px);
+    }
+    40% {
+        transform: translateX(0%);
+    }
+    80% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+li .nav-link:hover {
+    background-color: #75aaf4;
+    color: black !important;
+}
+.form-group {
+    margin-top: 10px !important;
+}
+.form-group .form-control {
+    /* padding-left: 0px; */
+    /* border: none !important;
+    border-bottom: 2px solid black !important; */
+    width: 100%;
+}
+label {
+    font-weight: bold;
+}
+.keluar:hover {
+    background-color: red;
+}
+.reset,
+.simpan {
+    width: 80%;
+}
+
+.dashkrs {
+    overflow: auto;
+    max-height: 290px;
+}
+thead {
+    box-sizing: border-box !important;
+}
+.konten,
+.data-profile {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.semi-circle {
+    border-radius: 100% 100% 40% 40%;
+}
+.rotated-semi-circle {
+    cursor: pointer;
+    opacity: 0.7;
+    border-radius: 0 0 40% 40% / 0 0 100% 100%;
+}
+.rotated-semi-circle:hover {
+    opacity: 0.9 !important;
+    background-color: #75aaf4 !important;
+}
+
+.profile-main {
+    margin: 0px !important;
+    max-width: 1078.8px;
+}
+
+.close:focus,
+.close:active {
+    outline: none !important;
+    box-shadow: none;
+}
